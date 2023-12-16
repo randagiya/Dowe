@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Dowe</string>
+    <string name="selamat_datang">Selamat datang di Dowe</string>
+    <string name="selamat_datang2">Tempat pengaduan masyarakat untuk Kota pekanbaru </string>
+    <string name="login_google">Login dengan Google</string>
+</resources>
