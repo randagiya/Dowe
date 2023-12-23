@@ -3,4 +3,40 @@
     <string name="selamat_datang">Selamat datang di Dowe</string>
     <string name="selamat_datang2">Tempat pengaduan masyarakat untuk Kota pekanbaru </string>
     <string name="login_google">Login dengan Google</string>
+    <string name="ngubungi">Nomor layanan darurat yang bisa kamu hubungi</string>
+    <string name="nomor_rs_pekan">RSUD Arifin Achmad : 0761 - 36116
+RS Awal Bros : 0761 - 47333
+RS Santa Maria : 0761 - 22213
+RS Ibnu Sina : 0761 - 24242
+RS Lancang Kuning : 0761 - 22631
+RS PMC : 0761 - 828100
+RS Polda : 0761 - 47691
+RS Auri : 0761 - 61456
+RS Petala Bumi : 0761 - 23024
+RS Bina kasih : 0761 - 21718
+RS Syafira : 0761 - 35360
+RS Amad Yani : 0761 - 23954/856370
+RS Eria Bunda : 0761 - 23600
+RS Tabrani : 0761 - 35467
+RSJ Tampan : 0761 - 63240</string>
+    <string name="nomor_pol_pekan">
+        Mapolresta Pekanbaru : 0761-21110
+Satuan Lalu Lintas Mapolresta Pekanbaru : 0761-25566
+Unit Kecelakaan Lalu Lintas Mapolresta Pekanbaru : 0823-81-500-500
+Bagian Kejahatan dan Kekerasan (Jatanras) : 0813-78278405
+Intelijen Polresta Pekanbaru (Intel) : 071-854635
+Polsek Pekanbaru Kota : 0811-752110
+Polsek Senapelan : 0811-760544
+Polsek Limapuluh : 0761-22807
+Polsek Tampan : 0761-64110
+Polsek Bukit Raya : 0761-674765
+Polsek Tenayan Raya : 0761-7871493
+Polsek Rumbai Pesisir : 0761-53430
+Polsek Payung Sekaki : 0761-5637782
+Polsek Rumbai (Jauh) : 0761-7702710
+Polsek SKP (Polsek Pelabuhan) : 0761-23081
+Polsek Sukajadi : 0761-37075
+    </string>
+    <string name="nomor_dam_pekan">Damkar Pekanbaru : 076122382</string>
+    <string name="nomor_ban_pekan"> Basarnas Pekanbaru : 0761674821/08117770115</string>
 </resources>

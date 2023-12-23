@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/header_halaman"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        app:cardBackgroundColor="@color/grey"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/backArrowImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:padding="20dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:rotation="180"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_arrow_forward_24" />
+
+            <TextView
+                android:id="@+id/textKonDar"
+                android:paddingStart="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="25dp"
+                android:text="Kontak Darurat"
+                android:textStyle="bold"
+                android:gravity="center|start"/>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textNgubungi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ngubungi"
+        android:textStyle="bold"
+        android:textSize="16.5sp"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_halaman"
+      />
+
+    <ImageView
+        android:id="@+id/iconPolisi"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/police"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/background_oval"
+        app:layout_constraintTop_toBottomOf="@id/textNgubungi"
+        app:layout_constraintStart_toStartOf="@id/textNgubungi"/>
+    <TextView
+        android:id="@+id/textNoPoli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Polisi (110)"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintStart_toEndOf="@id/iconPolisi"
+        app:layout_constraintTop_toTopOf="@id/iconPolisi"
+        />
+    <ImageView
+        android:id="@+id/Dropdown_polis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:clickable="true"
+        android:layout_marginStart="130dp"
+        app:srcCompat="@drawable/baseline_arrow_drop_down_24"
+        app:layout_constraintTop_toTopOf="@id/iconPolisi"
+        app:layout_constraintStart_toEndOf="@id/iconPolisi"/>
+
+    <ImageView
+        android:id="@+id/iconDamkar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/damkar"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_oval"
+        app:layout_constraintTop_toBottomOf="@id/iconPolisi"
+        app:layout_constraintStart_toStartOf="@id/iconPolisi"/>
+    <TextView
+        android:id="@+id/textNoDamkar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Damkar(113)"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintStart_toEndOf="@id/iconDamkar"
+        app:layout_constraintTop_toTopOf="@id/iconDamkar"
+        />
+    <ImageView
+        android:id="@+id/Dropdown_Damkar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:clickable="true"
+        android:layout_marginStart="130dp"
+        app:srcCompat="@drawable/baseline_arrow_drop_down_24"
+        app:layout_constraintTop_toTopOf="@id/iconDamkar"
+        app:layout_constraintStart_toEndOf="@id/iconDamkar"/>
+
+
+
+    <ImageView
+        android:id="@+id/iconRS"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/rs"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_oval"
+        app:layout_constraintTop_toBottomOf="@id/iconDamkar"
+        app:layout_constraintStart_toStartOf="@id/iconDamkar"/>
+    <TextView
+        android:id="@+id/textNoRS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RS(118)"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintStart_toEndOf="@id/iconRS"
+        app:layout_constraintTop_toTopOf="@id/iconRS"
+        />
+    <ImageView
+        android:id="@+id/Dropdown_RS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:clickable="true"
+        android:layout_marginStart="130dp"
+        app:srcCompat="@drawable/baseline_arrow_drop_down_24"
+        app:layout_constraintTop_toTopOf="@id/iconRS"
+        app:layout_constraintStart_toEndOf="@id/iconRS"/>
+
+
+
+
+
+    <ImageView
+        android:id="@+id/iconBasarnas"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/basarnas"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/background_oval"
+        app:layout_constraintTop_toBottomOf="@id/iconRS"
+        app:layout_constraintStart_toStartOf="@id/iconRS"/>
+    <TextView
+        android:id="@+id/textNoBasarnas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basarnas(115)"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintStart_toEndOf="@id/iconBasarnas"
+        app:layout_constraintTop_toTopOf="@id/iconBasarnas"
+        />
+    <ImageView
+        android:id="@+id/Dropdown_Basarnas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:clickable="true"
+        android:layout_marginStart="130dp"
+        app:srcCompat="@drawable/baseline_arrow_drop_down_24"
+        app:layout_constraintTop_toTopOf="@id/iconBasarnas"
+        app:layout_constraintStart_toEndOf="@id/iconBasarnas"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
