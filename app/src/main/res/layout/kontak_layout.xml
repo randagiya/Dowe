@@ -55,7 +55,10 @@
         android:text="@string/ngubungi"
         android:textStyle="bold"
         android:textSize="16.5sp"
-        android:padding="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="30dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_halaman"
       />
@@ -68,11 +71,12 @@
         android:padding="10dp"
         android:layout_marginTop="30dp"
         android:layout_marginStart="30dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/background_oval"
         app:layout_constraintTop_toBottomOf="@id/textNgubungi"
         app:layout_constraintStart_toStartOf="@id/textNgubungi"/>
     <TextView
-        android:id="@+id/textNoPoli"
+        android:id="@+id/textJuNoPolisi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Polisi (110)"
@@ -86,7 +90,7 @@
         app:layout_constraintTop_toTopOf="@id/iconPolisi"
         />
     <ImageView
-        android:id="@+id/Dropdown_polis"
+        android:id="@+id/tampilStr_polis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -97,6 +101,23 @@
         app:srcCompat="@drawable/baseline_arrow_drop_down_24"
         app:layout_constraintTop_toTopOf="@id/iconPolisi"
         app:layout_constraintStart_toEndOf="@id/iconPolisi"/>
+    <TextView
+        android:id="@+id/textNoPolisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="@id/iconPolisi"
+        app:layout_constraintTop_toBottomOf="@id/iconPolisi"
+        />
+
+
+
+
 
     <ImageView
         android:id="@+id/iconDamkar"
@@ -104,12 +125,13 @@
         android:layout_height="70dp"
         app:srcCompat="@drawable/damkar"
         android:padding="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/background_oval"
-        app:layout_constraintTop_toBottomOf="@id/iconPolisi"
+        app:layout_constraintTop_toBottomOf="@id/textNoPolisi"
         app:layout_constraintStart_toStartOf="@id/iconPolisi"/>
     <TextView
-        android:id="@+id/textNoDamkar"
+        android:id="@+id/textJuNoDamkar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Damkar(113)"
@@ -123,7 +145,7 @@
         app:layout_constraintTop_toTopOf="@id/iconDamkar"
         />
     <ImageView
-        android:id="@+id/Dropdown_Damkar"
+        android:id="@+id/tampilStr_Damkar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -134,7 +156,19 @@
         app:srcCompat="@drawable/baseline_arrow_drop_down_24"
         app:layout_constraintTop_toTopOf="@id/iconDamkar"
         app:layout_constraintStart_toEndOf="@id/iconDamkar"/>
-
+    <TextView
+        android:id="@+id/textNoDamkar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="@id/iconDamkar"
+        app:layout_constraintTop_toBottomOf="@id/iconDamkar"
+        />
 
 
     <ImageView
@@ -143,12 +177,13 @@
         android:layout_height="70dp"
         app:srcCompat="@drawable/rs"
         android:padding="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/background_oval"
-        app:layout_constraintTop_toBottomOf="@id/iconDamkar"
+        app:layout_constraintTop_toBottomOf="@id/textNoDamkar"
         app:layout_constraintStart_toStartOf="@id/iconDamkar"/>
     <TextView
-        android:id="@+id/textNoRS"
+        android:id="@+id/textJuNoRS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RS(118)"
@@ -162,7 +197,7 @@
         app:layout_constraintTop_toTopOf="@id/iconRS"
         />
     <ImageView
-        android:id="@+id/Dropdown_RS"
+        android:id="@+id/tampilStr_RS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -173,7 +208,19 @@
         app:srcCompat="@drawable/baseline_arrow_drop_down_24"
         app:layout_constraintTop_toTopOf="@id/iconRS"
         app:layout_constraintStart_toEndOf="@id/iconRS"/>
-
+    <TextView
+        android:id="@+id/textNoRS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="@id/iconRS"
+        app:layout_constraintTop_toBottomOf="@id/iconRS"
+        />
 
 
 
@@ -184,12 +231,13 @@
         android:layout_height="70dp"
         app:srcCompat="@drawable/basarnas"
         android:padding="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/background_oval"
-        app:layout_constraintTop_toBottomOf="@id/iconRS"
+        app:layout_constraintTop_toBottomOf="@id/textNoRS"
         app:layout_constraintStart_toStartOf="@id/iconRS"/>
     <TextView
-        android:id="@+id/textNoBasarnas"
+        android:id="@+id/textJuNoBasarnas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Basarnas(115)"
@@ -203,7 +251,7 @@
         app:layout_constraintTop_toTopOf="@id/iconBasarnas"
         />
     <ImageView
-        android:id="@+id/Dropdown_Basarnas"
+        android:id="@+id/tampilStr_Basarnas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="20dp"
@@ -214,7 +262,19 @@
         app:srcCompat="@drawable/baseline_arrow_drop_down_24"
         app:layout_constraintTop_toTopOf="@id/iconBasarnas"
         app:layout_constraintStart_toEndOf="@id/iconBasarnas"/>
-
+    <TextView
+        android:id="@+id/textNoBasarnas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="@id/iconBasarnas"
+        app:layout_constraintTop_toBottomOf="@id/iconBasarnas"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
