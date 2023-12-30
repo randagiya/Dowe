@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         val iconBerita = findViewById<ImageView>(R.id.iconBerita)
         val iconTransport = findViewById<ImageView>(R.id.iconTransport)
         val iconDarurat = findViewById<ImageView>(R.id.iconDarurat)
-//        val iconLapor = findViewById<ImageView>(R.id.iconLapor)
+        val iconLapor = findViewById<ImageView>(R.id.iconLapor)
 
         iconBerita.setOnClickListener {
             val intent = Intent(this, Berita::class.java)
@@ -28,10 +28,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, KontakDarurat::class.java)
             startActivity(intent)
         }
-//        iconLapor.setOnClickListener {
-//            val intent = Intent(this, Transport::class.java)
-//            startActivity(intent)
-//        }
+        iconLapor.setOnClickListener {
+            val intent = Intent(this, Lapor::class.java)
+            startActivity(intent)
+        }
     }
 
 

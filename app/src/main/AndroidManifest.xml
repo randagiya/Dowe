@@ -24,6 +24,7 @@
         <activity android:name=".Berita" />
         <activity android:name=".KontakDarurat" />
         <activity android:name=".Transport" />
+        <activity android:name=".Lapor"/>
     </application>
 
 </manifest>
