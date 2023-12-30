@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/judulImg"
+        android:layout_width="124dp"
+        android:layout_height="81dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04"
+        app:srcCompat="@drawable/dowe" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/judulImg"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp">
+
+
+    <TextView
+        android:id="@+id/judulView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selamat_datang"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/judulImg"
+        app:layout_constraintStart_toStartOf="@id/judulImg" />
+
+
+    <TextView
+        android:id="@+id/SubJudulView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selamat_datang2"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/judulView"
+        app:layout_constraintStart_toStartOf="@id/judulView"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/SubJudulView"
+            android:layout_marginTop="180dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iconLapor"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/police"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:clickable="true"
+        android:background="@drawable/background_oval_dash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+     />
+                <TextView
+                    android:id="@+id/JudLapor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Melapor"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@id/iconLapor"
+                    app:layout_constraintStart_toStartOf="@id/iconLapor"
+                    app:layout_constraintEnd_toEndOf="@id/iconLapor"/>
+
+    <ImageView
+        android:id="@+id/iconBerita"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/berita"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:clickable="true"
+        android:background="@drawable/background_oval_dash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iconLapor"
+        />
+                <TextView
+                    android:id="@+id/JudBerita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berita"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@id/iconBerita"
+                    app:layout_constraintStart_toStartOf="@id/iconBerita"
+                    app:layout_constraintEnd_toEndOf="@id/iconBerita"/>
+
+
+    <ImageView
+        android:id="@+id/iconTransport"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/police"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_oval_dash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iconBerita"
+        />
+                <TextView
+                    android:id="@+id/JudTransport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transport"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@id/iconTransport"
+                    app:layout_constraintStart_toStartOf="@id/iconTransport"
+                    app:layout_constraintEnd_toEndOf="@id/iconTransport"/>
+
+    <ImageView
+        android:id="@+id/iconDarurat"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/police"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_oval_dash"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iconTransport"
+        />
+
+                <TextView
+                    android:id="@+id/JudDarurat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Layanan Darurat"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@id/iconDarurat"
+                    app:layout_constraintStart_toStartOf="@id/iconDarurat"
+                    app:layout_constraintEnd_toEndOf="@id/iconDarurat"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
