@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Dowe"
         tools:targetApi="31">
         <activity
-            android:name=".Transport"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Berita" />
+        <activity android:name=".KontakDarurat" />
+        <activity android:name=".Transport" />
     </application>
 
 </manifest>

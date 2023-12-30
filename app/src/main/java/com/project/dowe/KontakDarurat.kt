@@ -1,5 +1,6 @@
 package com.project.dowe
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
@@ -20,11 +21,19 @@ class KontakDarurat : AppCompatActivity() {
         val spinIdDa = findViewById<ImageView>(R.id.tampilStr_Damkar)
         val spinIdBa = findViewById<ImageView>(R.id.tampilStr_Basarnas)
         val spinIdRS = findViewById<ImageView>(R.id.tampilStr_RS)
+        val backArrowImg = findViewById<ImageView>(R.id.backArrowImg)
+
+        backArrowImg.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         textPolis = findViewById(R.id.textNoPolisi)
         textDamkar = findViewById(R.id.textNoDamkar)
         textBasarnas = findViewById(R.id.textNoBasarnas)
         textRS = findViewById(R.id.textNoRS)
+
+
 
         hideTextViews()
 

@@ -1,6 +1,8 @@
 package com.project.dowe
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 class Berita : AppCompatActivity() {
@@ -16,6 +18,13 @@ class Berita : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.berita_layout)
+
+        val backArrowImg = findViewById<ImageView>(R.id.backArrowImg)
+
+        backArrowImg.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
         viewPager = findViewById(R.id.viewPager)
 
