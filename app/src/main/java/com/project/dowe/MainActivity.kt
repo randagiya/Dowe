@@ -9,6 +9,14 @@ import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.FirebaseApp
+import android.graphics.drawable.Drawable
+import android.net.Uri
+import android.widget.Button
+import android.widget.TextView
+import com.bumptech.glide.Glide
+import org.jsoup.Jsoup
+import org.jsoup.nodes.Document
 
 class MainActivity : AppCompatActivity() {
     private lateinit var logoutButton: ImageButton
@@ -17,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        FirebaseApp.initializeApp(this)
         setContentView(R.layout.dashboard_layout)
 
         logoutButton = findViewById(R.id.logoutButton)
@@ -78,7 +87,32 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Login::class.java)
             startActivityForResult(intent, REQUEST_LOGIN)
         }
+
+        // Berita
+        val imageView = findViewById<ImageView>(R.id.imageView)
+        val textView = findViewById<TextView>(R.id.textView)
+        val button = findViewById<Button>(R.id.button)
+
+        // Set image
+        val url = "https://regional.kompas.com/read/2024/01/02/132006278/banjir-di-rokan-hulu-belum-surut-warga-beraktivitas-pakai-perahu"
+        Glide.with(this)
+            .load(url)
+            .into(imageView)
+
+        // Set text
+        val doc = Jsoup.connect(url).get()
+        val title = doc.select("title").text()
+        textView.text = title
+
+        // Set button
+        button.text = "Baca Selengkapnya"
+        button.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url)
+            startActivity(intent)
+        }
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
