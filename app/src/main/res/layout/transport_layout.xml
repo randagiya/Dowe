@@ -6,7 +6,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -102,8 +101,16 @@
 
     </androidx.cardview.widget.CardView>
 
+
+
+
+
+
+
+
+
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardNamaBus"
+        android:id="@+id/cardNamaBus1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/cardJudul"
@@ -116,7 +123,7 @@
         app:cardElevation="4dp">
 
         <ImageView
-            android:id="@+id/imageBackground"
+            android:id="@+id/imageBackground1"
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:alpha="0.6"
@@ -124,7 +131,7 @@
             android:src="@drawable/bus" />
 
         <TextView
-            android:id="@+id/teksNamaBus"
+            android:id="@+id/teksNamaBus1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bus Koridor 01"
@@ -137,10 +144,10 @@
             app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
-            android:id="@+id/teksDeskBus"
+            android:id="@+id/teksDeskBus1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Deskripsi Bus Koridor 01"
+            android:text="Pandau - Ramayana/Sukaramai Trade Center"
             android:textSize="16sp"
             android:textStyle="normal"
             android:textColor="@android:color/white"
@@ -148,6 +155,630 @@
             android:layout_marginTop="30dp"/>
 
     </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus1"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 1A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            app:layout_constraintTop_toBottomOf="@id/cardNamaBus1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/teksDeskBus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS Awal Bros Sudirman - Bandar Udara Internasional Sultan Syarif Qasim II"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 02"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminal Bandar Raya Payung Sekaki (AKAP) - Kulim Ujung"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus3"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground4"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 03"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RS Awal Bros Sudirman	UIN - Suska Riau"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus4"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground5"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 4A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramayana/Sukaramai Trade Center - Pasar Tangor"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus5"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground6"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 4B"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ramayana/Sukaramai Trade Center - Terminal Bandar Raya Payung Sekaki (AKAP)"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus6"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground7"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 4C"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kantor Walikota Lama (Mal Pelayanan Publik)	- Komplek Kantor Walikota Tenayan"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus7"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground8"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 05"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pelabuhan Sungai Duku - Kantor BNI Sudirman"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus8"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground9"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 06"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminal Bandar Raya Payung Sekaki (AKAP) - Pandau"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus9"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground10"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 7A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pujasera Arifin Ahmad	- Tribakti (Nangka) via Jl. Paus"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus10"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground11"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 7B"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pujasera Arifin Ahmad	- Puskesmas Simpang 3 Marpoyan via Jl. Kartama"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus11"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground12"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 8A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kantor Walikota Lama (Mal Pelayanan Publik) - Stadion Kaharuddin Nasution"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus12"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground13"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 8B"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stadion Kaharuddin Nasution - Palas"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus13"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground14"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 09"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terminal Bandar Raya Payung Sekaki (AKAP)	UIN Suska Riau"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNamaBus15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/cardNamaBus14"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <ImageView
+            android:id="@+id/imageBackground15"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alpha="0.6"
+            android:scaleType="center"
+            android:src="@drawable/bus" />
+
+        <TextView
+            android:id="@+id/teksNamaBus15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Koridor 10"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/teksDeskBus15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stadion Kaharuddin Nasution - Ramayana/Sukaramai Trade Center"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_marginTop="30dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
 
 
 
