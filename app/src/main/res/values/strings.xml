@@ -4,6 +4,7 @@
     <string name="selamat_datang2">Tempat pengaduan masyarakat untuk Kota pekanbaru </string>
     <string name="login_google">Login dengan Google</string>
     <string name="ngubungi">Nomor layanan darurat yang bisa kamu hubungi</string>
+    <string name="default_web_client_id">510023112466-6rlnp41781hvg036mhfjv99u7kgtht9r.apps.googleusercontent.com</string>
     <string-array name="nomor_rs_pekan">
         <item>RSUD Arifin Achmad : 0761 - 36116</item>
         <item>RS Awal Bros : 0761 - 47333</item>

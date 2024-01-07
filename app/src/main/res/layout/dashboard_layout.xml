@@ -4,6 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -19,6 +20,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.04"
         app:srcCompat="@drawable/dowe" />
+
+    <ImageButton
+        android:id="@+id/logoutButton"
+        android:layout_width="14dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:background="?android:selectableItemBackground"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/judulImg"
+        app:tint="@color/red"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardJudul"
@@ -74,20 +89,19 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/iconLapor"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/lapor"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="20dp"
-        android:clickable="true"
-        android:background="@drawable/background_oval_dash"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-     />
+                <ImageView
+                    android:id="@+id/iconLapor"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_oval_dash"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/lapor"
+                    tools:ignore="SpeakableTextPresentCheck" />
                 <TextView
                     android:id="@+id/JudLapor"
                     android:layout_width="wrap_content"
@@ -100,20 +114,19 @@
                     app:layout_constraintStart_toStartOf="@id/iconLapor"
                     app:layout_constraintEnd_toEndOf="@id/iconLapor"/>
 
-    <ImageView
-        android:id="@+id/iconBerita"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/berita"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="30dp"
-        android:clickable="true"
-        android:background="@drawable/background_oval_dash"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iconLapor"
-        />
+                <ImageView
+                    android:id="@+id/iconBerita"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_oval_dash"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toEndOf="@id/iconLapor"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/berita"
+                    tools:ignore="SpeakableTextPresentCheck" />
                 <TextView
                     android:id="@+id/JudBerita"
                     android:layout_width="wrap_content"
@@ -127,20 +140,19 @@
                     app:layout_constraintEnd_toEndOf="@id/iconBerita"/>
 
 
-    <ImageView
-        android:id="@+id/iconTransport"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/bus_ic"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="30dp"
-        android:clickable="true"
-        android:background="@drawable/background_oval_dash"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iconBerita"
-        />
+                <ImageView
+                    android:id="@+id/iconTransport"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_oval_dash"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toEndOf="@id/iconBerita"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/bus_ic"
+                    tools:ignore="SpeakableTextPresentCheck" />
                 <TextView
                     android:id="@+id/JudTransport"
                     android:layout_width="wrap_content"
@@ -153,22 +165,21 @@
                     app:layout_constraintStart_toStartOf="@id/iconTransport"
                     app:layout_constraintEnd_toEndOf="@id/iconTransport"/>
 
-    <ImageView
-        android:id="@+id/iconDarurat"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        app:srcCompat="@drawable/darurat"
-        android:padding="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="20dp"
-        android:clickable="true"
-        android:background="@drawable/background_oval_dash"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/iconTransport"
-        app:layout_constraintEnd_toEndOf="parent"
-        />
+                <ImageView
+                    android:id="@+id/iconDarurat"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/background_oval_dash"
+                    android:clickable="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/iconTransport"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/darurat" />
 
                 <TextView
                     android:id="@+id/JudDarurat"
@@ -180,9 +191,65 @@
                     android:textStyle="normal"
                     app:layout_constraintTop_toBottomOf="@id/iconDarurat"
                     app:layout_constraintStart_toStartOf="@id/iconDarurat"
+                    app:layout_constraintStart_toEndOf="@id/JudTransport"
                     app:layout_constraintEnd_toEndOf="@id/iconDarurat"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- Tempat untuk menampilkan fragment -->
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/buttons_layout" />
+
+                <!-- Layout untuk ImageView -->
+                <LinearLayout
+                    android:id="@+id/buttons_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/dashboard_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:src="@drawable/home" /> <!-- Tambahkan sumber gambar untuk Dashboard -->
+
+                    <ImageView
+                        android:id="@+id/profile_image_view"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:src="@drawable/profile" /> <!-- Tambahkan sumber gambar untuk Profile -->
+                </LinearLayout>
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.cardview.widget.CardView>
 
